@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary1: hsl(0, 100%, 74%);
+    --primary2: hsl(154, 59%, 51%);
+    --accent1: hsl(248, 32%, 49%);
+    --neutral1: hsl(249, 10%, 26%);
+    --neutral2: hsl(246, 25%, 77%);
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
