@@ -1,3 +1,9 @@
+/* 
+-------------------------------------
+Default styles and variables 
+-------------------------------------
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +18,132 @@
     --neutral2: hsl(246, 25%, 77%);
 }
 
-html {
+html, body {
+    background-color: var(--primary1);
+    height: 100vh;
     font-size: 16px;
+    background-image: url(images/bg-intro-desktop.png);
+}
+
+h1, h2, h3, p, span a, input, ::placeholder {
     font-family: 'Poppins', sans-serif;
+}
+
+/* 
+-------------------------------------
+Layout
+-------------------------------------
+*/
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.text-col {
+    flex-basis: 50%;
+    color: white;
+    padding-right: 3rem;
+}
+
+.text-col h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.text-col p {
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.form-col {
+    flex-basis: 50%;
+    padding-left: 3rem;
+}
+
+.notice-box {
+    background-color: var(--accent1);
+    color: white;
+    text-align: center;
+    padding: .9rem 1rem;
+    border-radius: .5rem;
+    font-size: .7rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 .4rem 0 rgba(0,0,0,.15);
+}
+
+.highlighted {
+    font-weight: 600;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .4rem 0 rgba(0,0,0,.15);
+}
+
+.field-group {
+    margin-bottom: 1rem;
+}
+
+#form input {
+    width: 100%;
+    padding: .75rem 1.5rem;
+    border: 1.5px solid #eee;
+    border-radius: 4px;
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--neutral1);
+}
+
+#form input:focus {
+    outline: none;
+    border: 1.5px solid var(--accent1);
+}
+
+#form input[type="submit"] {
+    cursor: pointer;
+    background-color: var(--primary2);
+    color: white;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+    margin-bottom: .6rem;
+    border-color:hsl(154, 59%, 47%);
+    box-shadow:0 .1rem 0 hsl(154, 59%, 47%);
+}
+
+.input_error {
+    border-color: var(--primary1) !important;
+    margin-bottom: 4px;
+}
+
+.error {
+    text-align: right;
+    color: var(--primary1);
+    font-family: 'Poppins', sans-serif;
+    font-size: .5rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.terms {
+    text-align: center;
+    color: var(--neutral2);
+    font-size: .5rem;
+    font-weight: 500;
+}
+
+.terms__link {
+    color: var(--primary1);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .52rem;
 }

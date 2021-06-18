@@ -8,24 +8,47 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="scripts.js"></script>
 </head>
 <body>
+  <main class="container">
+      <div class="text-col">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
+      </div>
+      <div class="form-col">
+        <div class="notice-box">
+          <p><span class="highlighted">Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form action="/" id="form" method="GET" autocomplete="off">
 
-  Learn to code by watching others
+          <div class="field-group">
+            <input type="text" name="fname" id="fname" placeholder="First Name" autocomplete="off"   />
+            <div class="error" id="fname_error"></div>
+          </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+          <div class="field-group">
+            <input type="text" name="lname" id="lname" placeholder="Last Name" />
+            <div class="error" id="lname_error"></div>
+          </div>
 
-  Try it free 7 days then $20/mo. thereafter
+          <div class="field-group">
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <div class="error" id="email_error"></div>
+          </div>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
+          <div class="field-group">
+            <input type="text" name="password" id="password" placeholder="Password" />
+            <div class="error" id="password_error"></div>
+          </div>
+          
+          <input type="submit" value="Claim your free trial">
+          <p class="terms">By clicking the button, you are agreeing to our <a href="#" class="terms__link">Terms and Services</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
   
   <footer>
   </footer>
